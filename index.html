@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Hub</title>
+    <link rel="stylesheet" href="styles/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="left-text">Recipe Hub</div>
+        <div class="burger-menu" id="burgerMenu">&#9776;</div>
+        <nav class="nav-links" id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#category">Category</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    
+    <section id="home" class="home-page">
+        <div class="search-grid">
+            <p class="recipe-search-title">Search your favorite food</p>
+            <div class="input-box">
+                <input type="search" class="recipe-search-box" placeholder="Search recipes...">
+                <button class="search-button" type="submit">
+                    <i class="fas fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="meal-card-container">
+    </section>
+
+    <section id="category">
+        <h3 class="category-title">Categories</h3>
+        <div class="category-container">
+            <div class="image-card" data-category="Chicken">
+                <img src="images/chicken-category.jpg" alt="Chicken">
+                <div class="category-type">Chicken</div>
+            </div>
+            <div class="image-card" data-category="Seafood">
+                <img src="images/seafood-category.jpg" alt="Seafood">
+                <div class="category-type">Seafood</div>
+            </div>
+            <div class="image-card" data-category="Soup">
+                <img src="images/image.jpg" alt="Soup">
+                <div class="category-type">Soup</div>
+            </div>
+            <div class="image-card" data-category="Beef">
+                <img src="images/beef-category.jpg" alt="Beef">
+                <div class="category-type">Beef</div>
+            </div>
+            <div class="image-card" data-category="Pasta">
+                <img src="images/pasta-category.jpg" alt="Pasta">
+                <div class="category-type">Pasta</div>
+            </div>
+            <div class="image-card" data-category="Dessert">
+                <img src="images/dessert-category.jpg" alt="Dessert">
+                <div class="category-type">Dessert</div>
+            </div>
+            <div class="image-card" data-category="Vegetarian">
+                <img src="images/vegetarian-category.jpg" alt="Vegetarian">
+                <div class="category-type">Vegetarian</div>
+            </div>
+            <div class="image-card" data-category="Breakfast">
+                <img src="images/breakfast-category.jpg" alt="Breakfast">
+                <div class="category-type">Breakfast</div>
+            </div>
+            <div class="image-card" data-category="Salad">
+                <img src="images/salad-category.jpg" alt="Salad">
+                <div class="category-type">Salad</div>
+            </div>
+            <div class="image-card" data-category="Vegan">
+                <img src="images/vegan-category.jpg" alt="Vegan">
+                <div class="category-type">Vegan</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h3 class="about-title">About Us</h3>
+        <div id="about" class="about-container">
+            <div class="about-image">
+                <img src="images/about-us-image.jpg" alt="About Us">
+            </div>
+            <div class="about-text">
+                <h3>About Recipe Hub</h3>
+                <p>Welcome to Recipe Hub, your ultimate destination for discovering and sharing delicious recipes from around the world. Whether you're a seasoned chef or a kitchen novice, Recipe Hub is here to inspire your culinary journey and help you create unforgettable meals for yourself, your family, and your friends.</p>
+                <h3>Our Mission</h3>
+                <p>At Recipe Hub, our mission is to bring people together through the joy of cooking. We strive to make cooking accessible to everyone by providing a wide range of recipes that cater to all tastes and dietary needs. Our goal is to inspire creativity in the kitchen and make it easier for you to enjoy delicious, home-cooked meals every day.</p>
+            </div>
+        </div>
+  </section>
+
+
+  <section id="contact" class="contact-style">
+    <div class="contact-container">
+        <p class="contact-title">
+            Contact Us
+        </p>
+
+        <form>
+            <div class="input-box">
+                <div class="input-field field">
+                    <input type="text" placeholder="Full Name" id="name" class="input" required>
+                </div>   
+                <div class="input-field field">
+                    <input type="text" placeholder="Email" id="email" class="input" required>
+                </div>    
+            </div>
+                
+            <div class="input-box">
+            <div class="input-field field">
+                    <input type="text" placeholder="Phone Number" id="phone" class="input" required>
+                </div>
+                <div class="input-field field">
+                    <input type="text" placeholder="Subject" id="subject" class="input" required>
+                </div>
+            </div>  
+
+            <div class="textarea-field field">
+                <textarea name="" id="message" cols="30" rows="10" placeholder="Your message" class="input" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <div class="info-container">
+    <p>
+        <span class="span">Address:</span> Gjilan, Kosovë
+    </p>
+    <p>
+        <span class="span">Phone:</span> +111 111 111 111
+    </p>
+    <p>
+        <span class="span">Email:</span> info@recipehub.com
+    </p>
+    <p>
+        <span class="span">Instagram:</span> @recipe_hub
+    </p>
+    </div>
+ </section>
+
+    <footer>
+        <p>
+            © 2024 Recipe Hub. All rights reserved. <br><br>
+            Privacy Policy | Terms of Service | FAQs
+        </p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>

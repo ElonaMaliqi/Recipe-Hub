@@ -1,0 +1,576 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    background-color: #FFA62F;
+    width: 100%;
+    z-index: 1000;
+}
+
+.left-text {
+    float: left;
+    padding: 5px;
+    padding-left: 20px;
+    font-family: "Sacramento", cursive;
+    font-size: 38px;
+    color: white;
+}
+
+nav {
+    padding: 20px;
+    font-size: 15px;
+    text-align: end;
+}
+
+nav a {
+    font-family: "Poiret One", sans-serif;
+    font-weight: bold;
+    padding: 18px;
+    font-size: 18px;
+    color: white;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+a:active {
+    opacity: 0.5;
+}
+
+.burger-menu {
+    display: none;
+    font-size: 40px;
+    cursor: pointer;
+    padding: 10px;
+    text-align: right;
+}
+
+.burger-menu:hover,
+.search-button:hover {
+    opacity: 0.7;
+}
+
+.burger-menu:active,
+.search-button:active {
+    opacity: 0.5;
+}
+
+#category,
+#about,
+#contact {
+    padding-top: 50px;
+}
+
+
+
+.home-page {
+    padding-top: 70px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url('../images/background-image.jpg');
+    min-height: 750px;
+    width: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -1px 2px 20px rgba(0, 0, 0, 0.8);
+}
+
+
+.search-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    font-family: "Comfortaa", sans-serif;
+}
+
+.recipe-search-title {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.recipe-search-box,
+.search-button {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+}
+
+.recipe-search-box {
+    width: 20%;
+    outline: none;
+    font-size: 16px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.search-button {
+    background-color: #FFA62F;
+    cursor: pointer;
+    border: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.search-button i {
+    vertical-align: middle;
+    font-size: 18.5px;
+    color: white;
+}
+
+.meal-card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 200px;
+}
+
+.meal-style {
+    padding-top: 50px;
+}
+
+.card {
+    max-width: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 30px;
+    box-shadow: 1px 0px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+    max-width: 320px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card-content {
+    padding: 3px;
+    display: grid;
+    grid-template-columns: 1fr 110px;
+}
+
+.meal-name {
+    font-size: 18px;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: bold;
+    margin: 0;
+    margin: 5px;
+}
+
+.cuisine-name {
+    color: #666;
+    font-size: 15px;
+    font-family: "Comfortaa", sans-serif;
+    padding: px;
+    margin: 5px;
+}
+
+.card-content .btn {
+    display: inline-block;
+    padding: 5px 14px;
+    background-color: #FFA62F;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    color: white;
+    border-radius: 4px;
+    margin: 5px;
+    justify-self: end;
+    align-self: start;
+}
+
+.category-title,
+.about-title,
+.contact-title {
+    font-size: 35px;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: bold;
+    margin: 45px;
+}
+
+.category-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.image-card {
+    width: calc(20% - 20px);
+    max-width: 260px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 35px;
+    margin-right: 0px;
+    box-sizing: border-box;
+    position: relative;
+    cursor: pointer;
+}
+
+.image-card:hover {
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.7);
+}
+
+
+.image-card img {
+    width: 100%;
+    border-radius: 8px;
+    height: 100%;
+}
+
+.category-type {
+    position: absolute;
+    background-color: #FFA62F;
+    font-family: "Comfortaa", sans-serif;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    min-height: 25px;
+    top: 0;
+    right: 0;
+    border-radius: 8px;
+    font-size: 19px;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.about-image {
+    width: 100%;
+}
+
+.about-image img {
+    width: 90%;
+    margin-left: 45px;
+}
+
+.about-container .about-text {
+    font-size: 18px;
+    word-spacing: 5px;
+    font-family: "Comfortaa", sans-serif;
+}
+
+.about-text {
+    margin-right: 45px;
+}
+
+.about-title {
+    margin-top: 90px;
+}
+
+.about-text h3 {
+    font-weight: bold;
+    color: #FFA62F;
+    font-size: 20px;
+
+}
+
+.contact-style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    margin-bottom: 70px;
+}
+
+.contact-container,
+form {
+    width: 600px;
+    text-align: center;
+}
+
+form .input-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.field .input {
+    width: 100%;
+    padding: 18px;
+    padding-right: 60px;
+    border: none;
+    box-shadow: -1px 2px 15px rgb(255, 255, 255);
+    font-size: 15px;
+    margin: 15px 0;
+    background-color: #FFA62F;
+    border-radius: 15px;
+}
+
+
+.field .input::placeholder {
+    font-family: "Assistant", sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+form .textarea-field,
+.input {
+    resize: none;
+}
+
+
+form button {
+    padding: 18px 40px;
+    margin-left: 35px;
+    background-color: white;
+    border: 3px solid #FFA62F;
+    font-size: 18px;
+    color: black;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: bold;
+    font-family: "Comfortaa", sans-serif;
+    letter-spacing: 2px;
+    border-radius: 18px;
+}
+
+form button:hover {
+    opacity: 0.8;
+}
+
+form button:active {
+    opacity: 0.7;
+}
+
+.contact-style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 150px;
+    margin-bottom: 70px;
+}
+
+.contact-container,
+form {
+    width: 600px;
+    text-align: center;
+}
+
+form .input-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.field .input {
+    width: 100%;
+    padding: 18px;
+    padding-right: 60px;
+    border: none;
+    box-shadow: -1px 2px 15px rgb(255, 255, 255);
+    font-size: 15px;
+    margin: 15px 0;
+    background-color: #FFA62F;
+    border-radius: 15px;
+}
+
+.field .input::placeholder {
+    font-family: "Assistant", sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+form .textarea-field,
+.input {
+    resize: none;
+}
+
+form button {
+    padding: 18px 40px;
+    margin-left: 35px;
+    background-color: white;
+    border: 3px solid #FFA62F;
+    font-size: 18px;
+    color: black;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: bold;
+    font-family: "Comfortaa", sans-serif;
+    letter-spacing: 2px;
+    border-radius: 18px;
+}
+
+form button:hover {
+    opacity: 0.8;
+}
+
+form button:active {
+    opacity: 0.7;
+}
+
+.info-container {
+    margin-top: 40px;
+    margin-left: 40px;
+    width: 40%;
+    min-height: 100%;
+    border: solid #FFA62F 3px;
+    padding: 60px 0 60px 0;
+}
+
+.info-container p {
+    margin-left: 45px;
+    padding: 8px;
+    font-size: 18px;
+    font-family: "Comfortaa", sans-serif;
+    letter-spacing: 4px;
+}
+
+
+.span {
+    font-weight: bold;
+}
+
+footer {
+    height: 90px;
+    text-align: center;
+    padding-top: 100px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 18px;
+    box-shadow: 0px 10px 10px -10px black;
+}
+
+footer p {
+    padding: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .burger-menu {
+        display: block;
+        color: white;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .recipe-search-title {
+        font-size: 25px;
+    }
+
+    .recipe-search-box,
+    .search-button {
+        padding: 5px;
+    }
+
+    .recipe-search-box {
+        width: 50%;
+    }
+
+    .image-card {
+        width: calc(50% - 20px);
+    }
+
+    .about-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .about-container .about-text {
+        font-size: 14px;
+        margin-left: 45px;
+    }
+
+    .about-image img {
+        width: 80%;
+    }
+
+    .info-container {
+        width: 100%;
+    }
+
+    .info-container p {
+        font-size: 13px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .contact-container,
+    form {
+        width: 90%;
+        margin: 0 auto;
+        padding: 0px;
+    }
+
+    form .input-box {
+        flex-direction: column;
+    }
+
+    .field .input {
+        width: 100%;
+        padding: 15px;
+        margin-left: 0;
+    }
+
+    form button {
+        padding: 10px 25px;
+        font-size: 16px;
+    }
+
+
+    .contact-style {
+        margin-top: 100px;
+    }
+
+
+    .field .input {
+        width: 100%;
+        padding: 18px;
+        padding-right: 60px;
+        font-size: 15px;
+        margin: 10px 0;
+    }
+
+
+    .field .input::placeholder {
+        font-size: 16px;
+    }
+
+    .info-container {
+        margin: 0 auto;
+        margin-top: 40px;
+        width: 95%;
+    }
+
+    .info-container p {
+        margin-left: 20px;
+        font-size: 15px;
+    }
+
+}
