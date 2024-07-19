@@ -1,4 +1,4 @@
-const apiKey = '98d8daa52e9e4ceb8bd8097f23f88a2f';
+const apiKey = 'apikey';
 const apiUrl = `https://api.spoonacular.com/recipes/complexSearch?apiKey=${apiKey}&addRecipeInformation=true&number=36`;
 
 document.addEventListener('DOMContentLoaded', function () {
