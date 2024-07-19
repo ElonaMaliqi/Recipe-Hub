@@ -5,10 +5,12 @@ The website offers diverse categories, allowing users to find recipes that fit t
 Developed with **HTML**, **CSS**, and **JavaScript** for a seamless user experience.
 
 ## Screenshots
-![1](https://github.com/user-attachments/assets/e3b401c6-36ee-4c40-a216-59b8101871ad)
 
-![2](https://github.com/user-attachments/assets/f1b17a24-4702-4edb-9251-06bee9d45e71)
+![1](https://github.com/user-attachments/assets/90aa67ad-4599-4047-8f64-4832148e7c0c)
 
-![3](https://github.com/user-attachments/assets/15eda925-7f7e-40ca-ac50-c14af504afe7)
+![2](https://github.com/user-attachments/assets/5617e3a7-ce02-4f5a-b9ea-f92253689474)
+
+![3](https://github.com/user-attachments/assets/5ad94482-7a52-4f62-83c5-df5197c6b561)
+
 
 
