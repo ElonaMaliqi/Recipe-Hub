@@ -1,7 +1,7 @@
 # Recipe Hub
 A dynamic recipe hub website, for discovering and exploring a wide variety of recipes. Users can easily search for meals and access detailed recipes.
 The website offers diverse categories, allowing users to find recipes that fit their preferences. Within each category, users can filter meal results by different cuisines. Implemented API integration to fetch and display up-to-date recipes, ensuring users always have access to a rich and varied database of meals.\
-Make sure you make an API Key from the[spoonacular API](https://spoonacular.com/food-api/)\
+Make sure you make an API Key from the [spoonacular API](https://spoonacular.com/food-api/)\
 Developed with **HTML**, **CSS**, and **JavaScript** for a seamless user experience.
 
 ## Screenshots
