@@ -4,6 +4,8 @@ The website offers diverse categories, allowing users to find recipes that fit t
 Make sure you make an API Key from the [spoonacular API](https://spoonacular.com/food-api/)\
 Developed with **HTML**, **CSS**, and **JavaScript** for a seamless user experience.
 
+**Demo**:https://recipe-hub-website.netlify.app/
+
 ## Disclaimer
 This is a mock project designed to demonstrate the functionality of a recipe discovery platform. Users can search for meals and access detailed recipes, but the data is fetched from an API and is not original content.\
 Please note that all contact information provided on this website is fictional and for demonstration purposes only. 
